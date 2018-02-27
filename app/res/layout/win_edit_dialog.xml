@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnVerifyDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify Dialog"/>
+    <Button
+        android:id="@+id/btnUpgradeDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upgrade Dialog"/>
+    <Button
+        android:id="@+id/btnBPMeasureStandardDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BP Measure Standard Dialog"/>
+    <Button
+        android:id="@+id/btnCycleSettingsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cycle Settings Dialog"/>
+    <Button
+        android:id="@+id/btnFamilyNumAddDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family Num Add Dialog"/>
+    <Button
+        android:id="@+id/btnGetPictureDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Picture Dialog"/>
+    <Button
+        android:id="@+id/btnHRMeasureStandardDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HR Measure Standard Dialog"/>
+    <Button
+        android:id="@+id/btnInputBoxDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Box Dialog"/>
+    <Button
+        android:id="@+id/btnLocTypeDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loc Type Dialog"/>
+
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY" />
+
+
+</LinearLayout>

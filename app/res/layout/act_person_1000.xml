@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="如果你是排着队围成一个圆圈的1000名士兵中的一个，每两个杀掉一个（将所有人两两分组，然后杀掉每组第一个）直到剩下最后一个，那么你必须在哪个位置才可以活下来"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_marginTop="20dp"
+        android:text="计算"/>
+
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:text=""/>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/imgHeadIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="12dp"
+        android:src="@mipmap/icon_watch_head2" />
+
+    <TextView
+        android:id="@+id/txtDevName"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="设备1"
+        android:layout_marginLeft="26dp"
+        style="@style/txt_style_content_white" />
+
+</LinearLayout>

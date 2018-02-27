@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:text="时间:"/>
+
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#333333"
+        android:layout_toRightOf="@+id/txtLabel"
+        android:text="1111"/>
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtLabel2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textColor="#333333"-->
+        <!--android:layout_below="@+id/txtTime"-->
+        <!--android:text="位置:" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/txtLoc"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textSize="14sp"-->
+        <!--android:textColor="#333333"-->
+        <!--android:layout_below="@+id/txtTime"-->
+        <!--android:layout_toRightOf="@+id/txtLabel2"-->
+        <!--android:text="22222222222222222:"/>-->
+
+    <TextView
+        android:id="@+id/txtLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/txtLabel"
+        android:textColor="#333333"
+        android:text="状态:"/>
+
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@+id/txtLabel"
+        android:layout_toRightOf="@+id/txtLabel3"
+        android:textColor="#333333"
+        android:text="33333333:"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

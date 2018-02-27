@@ -1,0 +1,44 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/include_header_itl" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/txt_color_main"
+                    android:text="原生侧边栏和状态栏隐藏测试"/>
+
+                <Button
+                    android:id="@+id/btnOpen"
+                    android:layout_width="150dp"
+                    android:layout_height="45dp"
+                    android:text="侧边栏"/>
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/id_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:itemTextColor="@color/c_light_gray3"
+        android:layout_gravity="left"
+        app:menu="@menu/menu_nav"/>
+</android.support.v4.widget.DrawerLayout>

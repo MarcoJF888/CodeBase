@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjf.myself.codebase.activity.ExerciseLibrary.KotlinTestAct">
+
+    <TextView
+        android:id="@+id/txtTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试"
+        android:textColor="@color/black_000000"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutOne"
+        android:layout_below="@+id/txtTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="原始值:"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+        <TextView
+            android:id="@+id/txtFirst"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转换值："
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTwo"
+        android:layout_below="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/btnToInt"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转整型数"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+        <Button
+            android:id="@+id/btnToLong"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转长整数"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+
+        <Button
+            android:id="@+id/btnToFloat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转浮点数"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutThree"
+        android:layout_below="@+id/layoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <Button
+            android:id="@+id/btnToDouble"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转双精度数"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+        <Button
+            android:id="@+id/btnToBoolean"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转布尔型"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+
+        <Button
+            android:id="@+id/btnToChar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="转字符"
+            android:textSize="14sp"
+            android:textColor="@color/black_000000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtKoltinFor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutThree"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/main_color"
+        android:textSize="14sp"
+        android:text="点我测试"/>
+
+    <Button
+        android:id="@+id/btnGoGoGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

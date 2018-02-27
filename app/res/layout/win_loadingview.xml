@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnLoadingView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LoadingView"/>
+
+            <Button
+                android:id="@+id/btnLoadingDialog"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LoadingDialog" />
+
+            <Button
+                android:id="@+id/btnLoadingDialog1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="LoadingDialog1" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnGetVerificationCode"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="获取验证码"
+            android:layout_below="@+id/layout5"
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_white_selector"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="50dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/linearLayout"
+            android:layout_below="@+id/btnGetVerificationCode">
+
+            <TextView
+                android:text="Loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/primary_text_light"
+                android:textSize="45sp" />
+
+            <com.zjf.myself.codebase.thirdparty.dotsloadingview.DotsTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dots"
+                android:textSize="45sp"
+                android:textColor="#000000"
+                dots:autoplay="false"
+                dots:period="1000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/buttonPlay"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="开始/暂停"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonHide"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="展开/隐藏"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/buttonHideAndStop"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="启动/隐藏暂停"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <com.zjf.myself.codebase.thirdparty.GeometricLoadingView.GeometricLoadingView
+            android:id="@+id/loadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/layout2"
+            android:layout_gravity="center_horizontal"
+            app:loadingText="加载中..." />
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/loadView"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/button1"
+                android:text="View"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/button2"
+                android:text="Dialog"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.zjf.myself.codebase.view.LoadButton
+            android:id="@+id/btn_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            app:backColor="#009966"
+            app:contentPaddingLR="20dp"
+            app:contentPaddingTB="20dp"
+            app:content_color="@android:color/white"
+            app:progressedWidth="4dp"
+            android:textSize="20sp"
+            android:text="点击加载" />
+
+
+        <LinearLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/btn_status">
+            <Button
+                android:id="@+id/button3"
+                android:text="成功"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/button4"
+                android:text="失败"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/button5"
+                android:text="重置"
+                android:textSize="14dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <com.zjf.myself.codebase.view.LoadingView
+            android:id="@+id/loadingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </com.zjf.myself.codebase.view.LoadingView>
+    </RelativeLayout>
+</LinearLayout>

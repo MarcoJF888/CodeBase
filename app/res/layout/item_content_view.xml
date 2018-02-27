@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zjf.myself.codebase.view.ContentItemView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50.5dp"
+        android:paddingLeft="25dp">
+
+        <ImageView
+            android:id="@+id/iv_setting_img"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_setting_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_setting_img"
+            android:layout_toEndOf="@+id/iv_setting_img"
+            android:layout_marginStart="10dp" />
+
+
+        <ImageView
+            android:id="@+id/iv_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/jiantou1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_setting_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_content_text_size"
+            android:layout_alignTop="@+id/iv_setting_img"
+            android:layout_toLeftOf="@+id/iv_jiantou"
+            android:layout_toStartOf="@+id/iv_jiantou"/>
+    </RelativeLayout>
+</com.zjf.myself.codebase.view.ContentItemView>

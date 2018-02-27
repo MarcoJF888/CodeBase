@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtMeMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#4EA9E9"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="加载图片测试"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imgMePic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

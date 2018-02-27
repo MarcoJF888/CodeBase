@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    tools:context=".activity.ListTaskAct" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="18dp"
+        android:text="每日任务"
+        android:visibility="visible"
+        android:textColor="#ffffff"
+        android:background="@color/title_background_color"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffeeeeee"
+        android:orientation="vertical"
+        android:layout_below="@+id/title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#303F9F" >
+            <TextView
+                android:id="@+id/popupwindow_calendar_month"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <com.zjf.myself.codebase.thirdparty.signcalendar.SignCalendar
+            android:id="@+id/popupwindow_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:clickable="false" >
+        </com.zjf.myself.codebase.thirdparty.signcalendar.SignCalendar>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/taskCaleRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/btn_signIn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_sign_bg_selector"
+            android:text="完成任务"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

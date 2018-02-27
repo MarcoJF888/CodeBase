@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="正在校准请稍后....."-->
+        <!--android:textSize="18sp"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="20dp"/>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:text="设备正在校准血压,请稍候"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="20sp" />
+        <com.zjf.myself.codebase.thirdparty.dotsloadingview.DotsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dots"
+            android:textSize="24sp"
+            android:textColor="#000000"
+            dots:autoplay="false"
+            dots:period="1000"/>
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:layout_marginTop="10dp">-->
+        <!--<com.zjf.myself.codebase.thirdparty.cardiogram.view.GridView-->
+            <!--android:id="@+id/view_grid"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:visibility="visible"/>-->
+        <!--<com.zjf.myself.codebase.thirdparty.cardiogram.view.HeartBeatView-->
+            <!--android:visibility="visible"-->
+            <!--android:id="@+id/heartView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <RelativeLayout
+        android:layout_below="@+id/imgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+
+            android:background="@drawable/icon_button"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+
+            android:background="@drawable/icon_button"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+</LinearLayout>

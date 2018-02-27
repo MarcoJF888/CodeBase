@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_title_height">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_msg_back"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:scaleType="center"
+            android:background="@drawable/btn_half_transparent_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1111111"
+            android:textSize="@dimen/second_title_text_size"
+            android:textColor="#ffffff"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/btnRight"
+            android:background="@drawable/btn_half_transparent_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/txtRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="校准模式"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:textColor="#ffffff" />
+            <ImageView
+                android:id="@+id/imgRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="center"
+                android:visibility="visible"
+                android:src="@mipmap/icon_cut"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/txt_color_main">
+
+    </RelativeLayout>
+
+
+</LinearLayout>

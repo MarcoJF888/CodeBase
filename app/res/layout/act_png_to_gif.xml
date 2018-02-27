@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+
+    <ImageView
+        android:id="@+id/imgAnim"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgAnim"
+        android:text="开始"/>
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnStart"
+        android:text="暂停"/>
+
+
+
+</RelativeLayout>

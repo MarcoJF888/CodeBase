@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.zjf.myself.codebase"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+            <com.zjf.myself.codebase.view.test.CustomView
+                android:id="@+id/customView"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                custom:titleText="3712"
+                custom:titleTextColor="#ff0000"
+                custom:backgroundColor="#000000"
+                custom:titleTextSize="40sp"/>
+</LinearLayout>

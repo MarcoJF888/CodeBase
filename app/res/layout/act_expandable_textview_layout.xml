@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zjf.myself.codebase.thirdparty.expandabletextview.ExpandableTextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:ellipsize="end"
+            android:textColor="#666"
+            app:animDuration="200"
+            app:collapseDrawable="@mipmap/icon_green_arrow_down"
+            app:collapseExpandGrarity="right"
+            app:collapseExpandTextColor="@color/main_color"
+            app:contentTextSize="12sp"
+            app:expandDrawable="@mipmap/icon_green_arrow_up"
+            app:maxCollapsedLines="4"
+            app:textCollapse="@string/collapse"
+            app:textExpand="@string/expand"/>
+
+        <!--商品列表-->
+        <com.zjf.myself.codebase.view.ExpandableLinearLayout
+            android:id="@+id/ell_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            app:defaultItemCount="2"
+            app:expandText="收起内容"
+            app:hideText="查看更多"/>
+
+    </LinearLayout>
+</ScrollView>

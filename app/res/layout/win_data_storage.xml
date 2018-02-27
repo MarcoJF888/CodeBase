@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txtLAabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="数据库-本地存储数据"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"/>
+
+
+    <EditText
+        android:id="@+id/edtDataStorage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLAabel"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_border_black"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:hint="输入信息"/>
+
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDataStorage"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="保存"
+        />
+</RelativeLayout>

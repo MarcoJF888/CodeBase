@@ -1,0 +1,268 @@
+<resources>
+    <!--<string name="app_name">天道酬勤</string>-->
+    <string name="app_name">搬运工</string>
+
+
+    <string name="expand">展开</string>
+    <string name="collapse">收起</string>
+
+
+    <string name="button">button</string>
+    <string name="Sample">Sample</string>
+    <string name="pwd_modify_tv">修改密码</string>
+    <string name="add_qrcode_title">扫一扫</string>
+    <string name="add_watch_hand">手动添加</string>
+    <string name="add_child_hand">将二维码放入上方取景框内即可自动扫描</string>
+    <string name="main_tab">首页</string>
+    <string name="info_tab">资讯</string>
+    <string name="find_tab">发现</string>
+    <string name="mine_tab">我的</string>
+    <string name="btn_ok">确定</string>
+    <string name="tab_edit">编辑</string>
+    <string name="setting_familynum">亲情号码</string>
+    <string name="objectmsg_title">手表信息</string>
+    <string name="setting_save">保存</string>
+    <string name="heart_rate">心率检测</string>
+    <string name="health_history">历史详情</string>
+    <string name="metric">测量标准</string>
+    <string name="blood_pressure">血压检测</string>
+    <string name="main_sleep_analysis">睡眠分析</string>
+    <string name="function_loc">实时定位</string>
+    <string name="standard_map">标准地图</string>
+    <string name="satellite_map">卫星地图</string>
+    <string name="historical_track">历史轨迹</string>
+    <string name="function_monitor">远程关爱</string>
+    <string name="step_counter">健康运动</string>
+    <string name="today_motion">今日运动量</string>
+    <string name="target">目标：</string>
+    <string name="step_number">步数</string>
+    <string name="distance">路程</string>
+    <string name="time">时间</string>
+    <string name="km">KM</string>
+    <string name="min">MIN</string>
+    <string name="sit_alarm">久坐提醒</string>
+    <string name="sit_alarm_switch">开启久坐提醒</string>
+    <string name="sit_alarm_explain">有效时间内，如检测到您在设定的时间间隔内没有活动时，手表会震动和提醒</string>
+    <string name="add_watch">手动添加手表</string>
+    <string name="watch_info">手表信息</string>
+    <string name="objectmsg_signal">信号:</string>
+    <string name="objectmsg_battery">电量:</string>
+    <string name="objectmsg_qrcode">生成二维码</string>
+    <string name="settings">设置</string>
+    <string name="message_alert">消息提醒</string>
+    <string name="maccount_number">当前账号:</string>
+    <string name="user_name">用户名称:</string>
+    <string name="old_password">原密码:</string>
+    <string name="change_pass_oldhint">请输入6~16位原密码</string>
+    <string name="change_pass_newhint">请输入6~16位新密码</string>
+    <string name="new_password">新密码:</string>
+    <string name="confirm_password">确认密码:</string>
+    <string name="change_pass_rehint">请输入6~16位确认密码</string>
+    <string name="getmore_explain">使用说明</string>
+    <string name="user_agreement">用户协议</string>
+    <string name="contact_us">联系我们</string>
+    <string name="official_wechat_erweima">官方微信二维码</string>
+    <string name="official_wechat_saoyisao">扫一扫 更多惊喜等你拿</string>
+    <string name="feedback">意见反馈</string>
+    <string name="setting_watchset">手表恢复出厂设置:</string>
+    <string name="set_factory_hinttitle">恢复出厂设置</string>
+    <string name="set_factory_hint1">将清除手表中的全部数据</string>
+    <string name="set_factory_hint2">包括定位方式、计步数据、静音时段设置、手表响铃方式等。</string>
+    <string name="set_factory_hint3">包括定位方式、静音时段设置、手表响铃方式等、同事亲情号码列表清空,需要重新设置。</string>
+    <string name="set_factory_hint4">唯有绑定老乐手表的用户账号及绑定关系不会受到影响。</string>
+    <string name="set_factory_hint5">数据清除、不可恢复,需要对手表重新设置,请您谨慎操作！</string>
+    <string name="set_factory_ok">恢复出厂设置</string>
+    <string name="setting_fm_title">家庭成员</string>
+    <string name="settings_qcharge">查询资费</string>
+    <string name="setting_queryf_charge">查询话费</string>
+    <string name="setting_queryf_flow">查询流量</string>
+    <string name="setting_loctype">定位方式</string>
+    <string name="setting_loctime">连续定位</string>
+    <string name="setting_sleeptime">睡眠时段</string>
+    <string name="setting_silencetime">静默时段</string>
+    <string name="setting_callreminder">手表响铃方式</string>
+    <string name="setting_watchtime">设置手表时间</string>
+    <string name="set_watchtime_hint1">手表时间将更新到最新的系统时间</string>
+    <string name="set_watchtime_hint2">当前系统时间为：</string>
+    <string name="set_watchtime_hint3">使用24小时格式</string>
+    <string name="watch_name">设备名称</string>
+    <string name="set_locationtype_accurate">精准模式 : 以GPS为主,辅以基站和WIFI定位</string>
+    <string name="set_locationtype_normal">正常模式 : GPS定位,基站定位,WIFI定位三重定位</string>
+    <string name="set_locationtype_save">省电模式 : 仅基站定位,定位误差大</string>
+    <string name="setting_callreminder_title">请设置手表响铃方式</string>
+    <string name="set_sound_vibrate">响铃和振动</string>
+    <string name="set_only_sound">响铃</string>
+    <string name="set_only_vibrate">振动</string>
+    <string name="set_only_silence">静音</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="time_example">00:00</string>
+    <string name="set_sleeptime_hint1">开启后手表会在此时段休眠</string>
+    <string name="set_sleeptime">睡眠时段设定</string>
+    <string name="set_locatiointime_period">连续定位时段</string>
+    <string name="set_locationtime_interval">定位时间间隔越短，电池消耗越快。</string>
+    <string name="setting_timing_start_repeat">重复</string>
+    <string name="qrcode_title">二维码</string>
+    <string name="qrcode_hint">新家庭成员打开老乐应用扫描下方二维码即可添加手表</string>
+    <string name="qrcode_createdtime">二维码生成时间 : </string>
+    <string name="qrcode_hint2">注意:为了安全起见,二维码请勿泄漏非家庭成员!二维码单次一小时内有效</string>
+    <string name="qrcode_updata">刷新二维码</string>
+    <string name="set_factory_hint6">并将APP中所设置的功能恢复默认状态</string>
+    <string name="tab_me">我的</string>
+    <string name="dialog_info">温馨提示</string>
+    <string name="set_familynum_hint4">您的亲情号码有修改，确定不保存就退出吗？</string>
+
+    <string name="crop__pick_error">无效的图片</string>
+    <string name="crop__saving">正在保存照片…</string>
+    <string name="crop__wait">请等待…</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="txtSuggest">您属于一级轻度高血压,请注意生活方式,过度紧张劳累,睡眠不足,饮酒,剧烈运动,过多的摄入食盐,肥胖这些情况都可以导致血压升高。请保持良好的心态,稳定的情绪,多注意体育锻炼;如有不适,请及时到医院就诊。</string>
+
+
+    <string name="title_main">高德定位SDK功能展示</string>
+
+    <string name="title_location">获取定位数据</string>
+    <string name="location">获取定位数据</string>
+    <string name="location_dec">调用定位接口获取定位数据</string>
+
+    <string name="title_geoFence">地理围栏</string>
+    <string name="geoFence">地理围栏</string>
+    <string name="geoFence_dec">展示地理围栏功能</string>
+
+    <string name="roundGeoFence">圆形地理围栏</string>
+    <string name="roundGeoFence_dec">展示圆形地理围栏</string>
+
+    <string name="polygonGeoFence">多边形地理围栏</string>
+    <string name="polygonGeoFence_dec">展示多边形地理围栏</string>
+
+    <string name="keywordGeoFence">关键字地理围栏</string>
+    <string name="keywordGeoFence_dec">展示关键字地理围栏</string>
+
+    <string name="nearbyGeoFence">周边地理围栏</string>
+    <string name="nearbyGeoFence_dec">展示周边地理围栏</string>
+
+    <string name="districtGeoFence">行政区划地理围栏</string>
+    <string name="districtGeoFence_dec">展示行政区划地理围栏</string>
+
+    <string name="multipleGeoFence">综合展示</string>
+    <string name="multipleGeoFence_dec">综合展示地理围栏的功能</string>
+
+
+    <string name="oldGeoFence">旧版地理围栏</string>
+    <string name="oldGeoFence_dec">旧版地理围栏，不建议使用</string>
+
+
+    <string name="title_assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation">H5辅助定位</string>
+    <string name="assistantLocation_dec">展示H5辅助定位功能</string>
+
+    <string name="title_tools">地图计算工具</string>
+    <string name="tools">地图计算工具</string>
+    <string name="tools_dec">坐标转换等功能演示</string>
+
+    <string name="title_lastLocation">获取最后一次位置</string>
+    <string name="lastLocation">获取最后一次位置</string>
+    <string name="lastLocation_dec">获取最后一次定位的位置，此位置是一个历史位置</string>
+
+
+    <string name="title_alarmCPU">定时唤起CPU</string>
+    <string name="alarmCPU">定时唤起cpu</string>
+    <string name="alarmCPU_dec">通过一个闹钟程序后台定时唤起cpu</string>
+
+    <string name="title_errorCode">错误码说明</string>
+    <string name="errorCode">错误码说明</string>
+    <string name="errorCode_dec">错误码说明以及对应的解决方法</string>
+
+    <string name="defaultInteval">2000</string>
+    <string name="defaultHttpTimeout">30000</string>
+
+    <string name="battery_saving">低功耗模式</string>
+    <string name="device_sensors">仅设备模式</string>
+    <string name="hight_accuracy">高精度模式</string>
+    <string name="interval">定位周期(ms)</string>
+    <string name="httpTimeout">网络超时(ms)</string>
+    <string name="location_once">单次定位</string>
+    <string name="needAddress">逆地理编码</string>
+    <string name="cacheAble">开启缓存</string>
+    <string name="onceLastest">提高首次定位精度</string>
+    <string name="gpsFirst">GPS优先</string>
+    <string name="useSensor">使用传感器</string>
+    <string name="wifiScan">开启wifi扫描</string>
+
+    <string name="alarmInterval">唤醒周期(s)</string>
+
+    <string name="startLocation">开始定位</string>
+    <string name="stopLocation">停止定位</string>
+
+    <string name="fenceRadius">围栏半径</string>
+    <string name="meter">米</string>
+    <string name="activatesAction">触发条件</string>
+    <string name="alertIn">进入</string>
+    <string name="alertOut">离开</string>
+    <string name="alertStated">停留</string>
+    <string name="addFence">添加围栏</string>
+    <string name="removeFence">移除围栏</string>
+
+    <string name="hideOption">隐藏设置</string>
+    <string name="showOption">显示设置</string>
+
+    <string name="showList">显示列表</string>
+    <string name="hideList">隐藏列表</string>
+
+    <string name="fence_round">圆形围栏</string>
+    <string name="fence_polygon">多边形</string>
+    <string name="fence_keyword">关键字围栏</string>
+    <string name="fence_nearby">周边围栏</string>
+    <string name="fence_district">行政区划围栏</string>
+
+    <string name="getLastLocation">获取最后位置</string>
+
+    <string name="startAssistantLocation">启动H5辅助定位</string>
+    <string name="stopAssistantLocation">停止H5辅助定位</string>
+    <string name="urlLocation">浏览器定位</string>
+    <string name="assistantLocationInfo">辅助定位已经启动，请点击模拟浏览器请求或者在浏览器中输入http://127.0.0.1:43689/进行测试</string>
+
+    <string name="coordinateConvert">坐标转换</string>
+    <string name="checkIsChina">位置区域判断</string>
+
+    <string name="notifyTitle">提示</string>
+    <string name="notifyMsg">当前应用缺少必要权限。\n\n请点击\"设置\"-\"权限\"-打开所需权限。</string>
+    <string name="setting">设置</string>
+    <string name="cancel">取消</string>
+    <string name="progress_bar_finish">加载完成</string>
+
+
+    <string name="test_content">The story of a Chinese couple at Oxford University who first met each other as deskmate in middle school and recently married each other has gone viral, southcn.com reported.
+        Zhou Si, the groom, and Chen Mengge, the bride, married each other on Aug 18 and will together go to Oxford University to pursue their doctoral degrees later this year.
+        They were deskmate in middle school and then both were admitted by same high school but not in same class.</string>
+
+
+    <string name="errorCodeInfo">
+	    0	定位成功。	可以在定位回调里判断定位返回成功后再进行业务逻辑运算\n
+	    1	一些重要参数为空，如context；	请对定位传递的参数进行非空判断\n
+	    2	定位失败，由于仅扫描到单个wifi，且没有基站信息。	请重新尝试\n
+	    3	获取到的请求参数为空，可能获取过程中出现异常。	请对所连接网络进行全面检查，请求可能被篡改\n
+	    4	请求服务器过程中的异常，多为网络情况差，链路不通导致	请检查设备网络是否通畅\n
+	    5	返回的XML格式错误，解析失败。	请稍后再试\n
+	    6	定位服务返回定位失败。	请将errorDetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    7	KEY鉴权失败。	请仔细检查key绑定的sha1值与apk签名sha1值是否对应，或通过高频问题查找相关解决办法\n
+	    8	Android exception常规错误	请将errordetail（通过getLocationDetail()方法获取）信息通过工单系统反馈给我们\n
+	    9	定位初始化时出现异常。	请重新启动定位\n
+	    10	定位客户端启动失败。	请检查AndroidManifest.xml文件是否配置了APSService定位服务\n
+	    11	定位时的基站信息错误。	请检查是否安装SIM卡，设备很有可能连入了伪基站网络\n
+	    12	缺少定位权限。	请在设备的设置中开启app的定位权限\n
+	    13     定位失败，由于设备未开启WIFI模块或未插入SIM卡，且GPS当前不可用。 建议开启设备的WIFI模块，并将设备中插入一张可以正常工作的SIM卡，或者检查GPS是否开启；如果以上都内容都确认无误，请您检查App是否被授予定位权限\n
+	    14  GPS 定位失败，由于设备当前 GPS 状态差。 建议持设备到相对开阔的露天场所再次尝试\n
+	    15     定位结果被模拟导致定位失败。 如果您希望位置被模拟，请通过setMockEnable(true);方法开启允许位置模拟\n
+	    16     当前POI检索条件、行政区划检索条件下，无可用地理围栏。 建议调整检索条件后重新尝试，例如调整POI关键字，调整POI类型，调整周边搜区域，调整行政区关键字等\n
+	    17     相同的地理围栏已经存在，无需重复添加\n
+	</string>
+
+    <string name="loading">加载中...</string>
+    <string name="info">
+        赵丽颖，1987年10月16日出生于河北省廊坊市，中国内地影视女演员。
+2006年，因获得雅虎搜星比赛冯小刚组冠军而进入演艺圈；同年，在冯小刚执导的广告片《跪族篇》中担任女主角。2007年，参演个人首部电影《镖行天下之牡丹阁》。2011年，因在古装剧《新还珠格格》中饰演晴儿一角而被观众认识。2013年，凭借古装剧《陆贞传奇》获得更多关注。2014年10月，在第10届金鹰电视艺术节举办的投票活动中被选为“金鹰女神”；12月，凭借都市爱情剧《杉杉来了》获得第5届国剧盛典内地最具人气女演员奖；同年，成立海润传媒赵丽颖工作室。
+    </string>
+</resources>

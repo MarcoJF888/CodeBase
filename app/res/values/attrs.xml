@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="cropImageStyle" format="reference" />
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="DashedCircularProgress">
+        <attr name="external_color" format="color" />
+        <attr name="base_color" format="color" />
+        <attr name="progress_color" format="color" />
+        <attr name="max" format="float" />
+        <attr name="min" format="float" />
+        <!--<attr name="progress_icon" format="reference" />-->
+        <attr name="duration" format="integer" />
+        <attr name="progress_stroke_width" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomFrameLayoutAttr">
+        <attr name="layout_maxWidth" format="dimension"/>
+        <attr name="layout_maxHeight" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CirclePercentView">
+        <attr name="radius" format="dimension"/>
+        <attr name="stripeWidth" format="dimension"/><!--色带宽度-->
+        <attr name="percent" format="integer"/><!--百分比 最大值为100-->
+        <attr name="smallColor" format="color"/><!--色带宽度-->
+        <!--外圈颜色-->
+        <attr name="bigColor" format="color"/>
+
+        <!--中间字体颜色-->
+        <attr name="centerTextSize" format="dimension"/>
+        <!--色带宽度-->
+    </declare-styleable>
+
+
+    <declare-styleable name="NumberProgressBar">
+        <attr name="progress_current" format="integer"/>
+        <attr name="progress_max" format="integer"/>
+
+        <attr name="progress_unreached_color" format="color"/>
+        <attr name="progress_reached_color" format="color"/>
+
+        <attr name="progress_reached_bar_height" format="dimension"/>
+        <attr name="progress_unreached_bar_height" format="dimension"/>
+
+        <attr name="progress_text_size" format="dimension"/>
+        <attr name="progress_text_color" format="color"/>
+
+        <attr name="progress_text_offset" format="dimension"/>
+
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="invisible" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="numberProgressBarStyle" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="WaitingDots">
+        <attr name="dotsColor" format="color" />
+        <attr name="period" format="integer" />
+        <attr name="jumpHeight" format="integer" />
+        <attr name="autoplay" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+
+        <attr name="loadingText" format="string"/>
+        <attr name="loadingTextAppearance" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+
+    <!-- 末行对齐方式 -->
+    <declare-styleable name="AlignTextView">
+        <attr name="align" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 标点转换 -->
+    <declare-styleable name="CBAlignTextView">
+        <attr name="punctuationConvert" format="boolean"/>
+    </declare-styleable>
+
+
+    <!--收起展开textview-->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+        <attr name="drawableGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+    <!--收起展开Layout-->
+    <declare-styleable name="ExpandableLinearLayout">
+        <!--默认显示的条目数-->
+        <attr name="defaultItemCount" format="integer" />
+        <!--提示文字的大小-->
+        <attr name="tipTextSize" format="dimension" />
+        <!--字体颜色-->
+        <attr name="tipTextColor" format="color"/>
+        <!--展开时的文字提示-->
+        <attr name="expandText" format="string" />
+        <!--收起时的文字提示-->
+        <attr name="hideText" format="string" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ScrollViewTabIndicator">
+        <attr name="tpi_tabPadding" format="reference|dimension"/>
+        <attr name="tpi_indicatorColor" format="reference|color"/>
+        <attr name="tpi_indicatorHeight" format="reference|dimension"/>
+        <attr name="tpi_underLineColor" format="reference|color"/>
+        <attr name="tpi_underLineHeight" format="reference|dimension"/>
+        <attr name="tpi_indicatorMode" format="integer">
+            <enum name="match_parent" value="-1"/>
+            <enum name="wrap_content" value="-2"/>
+        </attr>
+        <attr name="android:textAppearance"/>
+        <attr name="tpi_tabBackground" format="reference"/>
+        <attr name="tpi_mode" format="integer">
+            <enum name="scroll" value="0x00000000"/>
+            <enum name="fixed" value="0x00000001"/>
+        </attr>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="LoadButton">
+        <attr name="android:text" />
+        <attr name="android:textSize" />
+        <attr name="stroke_color" format="color|reference" />
+        <attr name="content_color" format="color|reference" />
+        <attr name="radiu" format="dimension|reference" />
+        <attr name="rectwidth" format="dimension|reference" />
+        <attr name="contentPaddingLR" format="dimension|reference" />
+        <attr name="contentPaddingTB" format="dimension|reference" />
+        <attr name="progressedWidth" format="dimension|reference" />
+        <attr name="backColor" format="color|reference" />
+        <attr name="progressColor" format="color|reference" />
+        <attr name="progressSecondColor" format="color|reference" />
+        <attr name="loadSuccessDrawable" format="reference" />
+        <attr name="loadErrorDrawable" format="reference" />
+        <attr name="loadPauseDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeMenuLayout1">
+        <!-- format="reference"意为参考某一资源ID -->
+        <attr name="content_id" format="reference" />
+        <attr name="right_id" format="reference" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CustomTitleView">
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="titleTextSize" format="dimension"/>
+    </declare-styleable>
+
+
+</resources>

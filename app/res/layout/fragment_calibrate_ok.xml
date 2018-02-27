@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zjf.myself.codebase.view.SuperLoadingProgress
+        android:id="@+id/pro"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/txt_color_main"
+        android:text="您已经完成血压测量校准,以后的测量将会按照您个人的血压模型判断,是否立即测量血压?"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/pro"/>
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<Button-->
+            <!--android:id="@+id/btn"-->
+            <!--android:text="失败load"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/btn2"-->
+            <!--android:text="成功load"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+
+            android:background="@drawable/icon_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+
+            android:layout_marginTop="30dp"
+            android:background="@drawable/icon_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

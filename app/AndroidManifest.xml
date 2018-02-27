@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjf.myself.codebase">
+
+    <!-- 定位 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" /> -->
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    //闪光灯
+    <!-- <uses-feature android:name="android.hardware.camera" /> -->
+    <!-- <uses-feature android:name="android.hardware.autofocus" /> -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!-- <uses-permission android:name="android.permission.FLASHLIGHT" /> -->
+    <!-- <uses-permission android:name="android.permission.DISABLE_KEYGUARD" /> -->
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <!-- 请求网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 不是SDK需要的权限，是示例中的后台唤醒定位需要的权限 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- 需要运行时注册的权限 -->
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于提高GPS定位速度 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 更改设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 3.2.0版本增加 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    //获取布局分享
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_bg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="68e97b502646e5d054a3b1845887411f" />
+
+        <activity
+            android:name=".activity.LaunchAct"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 如果有启动页，就打开这个设为主界面，上面的为启动页 -->
+        <activity
+            android:name=".activity.HomeAct"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.zxly.o2o.activity.MAINPAGE_USER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ZxingCaptureAct"
+            android:label="@string/app_name"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".activity.ListExerciseLibraryAct" />
+        <activity android:name=".activity.ListUILibraryAct" />
+        <activity android:name=".activity.ListTaskAct" />
+        <activity android:name=".activity.LoginAct" />
+        <activity android:name=".activity.FragmentParentAct" />
+        <activity android:name=".activity.WebviewAct" />
+        <activity android:name=".activity.ListFreeTimeAct" />
+        <activity android:name=".activity.ListAlgorithmLibraryAct" />
+        <activity android:name=".activity.UILibrary.LaunchVideoAct" />
+        <activity android:name=".activity.ExerciseLibrary.DataStorageAct" />
+        <activity android:name=".activity.ExerciseLibrary.DataPutExtraAct" />
+        <activity android:name=".activity.ExerciseLibrary.MultiThreadAct" />
+        <activity android:name=".activity.ExerciseLibrary.HttpURLConnectionTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.DataPutExtraAct2" />
+        <activity android:name=".activity.ExerciseLibrary.HttpURLConnectionTestMeAct" />
+        <activity android:name=".activity.ExerciseLibrary.MySQLDatabaseTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.LifeCycleAct" />
+        <activity android:name=".activity.ExerciseLibrary.SharedPreferencesTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.PhoneNumAct" />
+        <activity android:name=".activity.ExerciseLibrary.LocWordAct" />
+        <activity android:name=".activity.ExerciseLibrary.TXTFileStorageAct" />
+        <activity android:name=".activity.ExerciseLibrary.ScreenTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.CloseBackKeyTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.BreakPointTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.MapTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.GlideImgTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.PngToGifAct" />
+        <activity android:name=".activity.ExerciseLibrary.GenQrCodeAct" />
+        <activity android:name=".activity.ExerciseLibrary.VolleyAct" />
+        <activity android:name=".activity.ExerciseLibrary.CustomViewAct" />
+        <activity android:name=".activity.ExerciseLibrary.BuilderTestAct" />
+        <activity android:name=".activity.AlgorithmList.Person1000Act" />
+        <activity android:name=".activity.AlgorithmList.DigitalGapAct" />
+        <activity android:name=".activity.AlgorithmList.ListSortAct" />
+        <activity android:name=".activity.AlgorithmList.WeekStepSumAct" />
+        <activity android:name=".activity.FreeTimeProjectList.NewsUIPageListViewAct" />
+        <activity android:name=".activity.FreeTimeProjectList.VolleyAndJsonTestAct" />
+        <activity android:name=".activity.FreeTimeProjectList.NewsUIpageRecycleViewGridAct" />
+        <activity android:name=".activity.FreeTimeProjectList.VideoPlayerAct" />
+        <activity android:name=".activity.FreeTimeProjectList.RecyclerViewAct" />
+        <activity android:name=".activity.FreeTimeProjectList.NewsCompatibleMainAct" />
+        <activity android:name=".thirdparty.NewsCompatibleTest.NewsCompatibleAct" />
+        <activity android:name=".activity.ProjectPagrList.LoginTestAct" />
+        <activity android:name=".activity.ProjectPagrList.FunctionHeartRateTestAct" />
+        <activity android:name=".activity.ProjectPagrList.CareAct" />
+        <activity android:name=".activity.ProjectPagrList.Sleep2Act" />
+        <activity android:name=".activity.ProjectPagrList.Sleep3Act" />
+        <activity android:name=".activity.ProjectPagrList.SleepAct" />
+        <activity android:name=".activity.ProjectPagrList.BPCalibrationAct" />
+        <activity android:name=".activity.ProjectPagrList.ECGMeasureAct" />
+        <activity android:name=".activity.ProjectPagrList.ScreenshotShareAct" />
+        <activity android:name=".activity.ProjectPagrList.DiscoverTestAct" />
+        <activity android:name=".activity.ProjectPagrList.ViewToBitmapAct" />
+        <activity android:name=".activity.UILibrary.BasicListviewAct" />
+        <activity android:name=".activity.UILibrary.TitleListViewAct" />
+        <activity android:name=".activity.UILibrary.GridViewAct" />
+        <activity android:name=".activity.UILibrary.DeviceRecycleViewAct" />
+        <activity android:name=".activity.UILibrary.WaterFallRecyclerViewAct" />
+        <activity android:name=".activity.UILibrary.RadioGroupAct" />
+        <activity android:name=".activity.UILibrary.CalendarAct" />
+        <activity android:name=".activity.UILibrary.CircularMenuAct" />
+        <activity android:name=".activity.UILibrary.HelloChartsAct" />
+        <activity android:name=".activity.UILibrary.LineColumnDependencyAct" />
+        <activity android:name=".activity.UILibrary.PreviewLineChartAct" />
+        <activity android:name=".activity.UILibrary.CircleProgressAct" />
+        <activity android:name=".activity.UILibrary.FunctionHeartRateMonitorAct" />
+        <activity android:name=".activity.UILibrary.JiangJiangAct" />
+        <activity android:name=".activity.UILibrary.JiangJiangLoadingAct" />
+        <activity android:name=".activity.UILibrary.BannerAct" />
+        <activity android:name=".activity.UILibrary.PieCharAct" />
+        <activity android:name=".activity.UILibrary.TextViewAnimAct" />
+        <activity android:name=".activity.UILibrary.MIUIAct" />
+        <activity android:name=".activity.UILibrary.BaseTitleListViewAct" />
+        <activity android:name=".activity.UILibrary.LoadingViewTestAct" />
+        <activity android:name=".activity.UILibrary.LineChartActivity" />
+        <activity android:name=".activity.UILibrary.PwdInputAct" />
+        <activity android:name=".activity.UILibrary.NowHwWeatherAct" />
+        <activity android:name=".activity.UILibrary.CalendarAct1" />
+        <activity android:name=".activity.UILibrary.CircleMenuAct" />
+        <activity android:name=".activity.UILibrary.NumberProgressBarAct" />
+        <activity android:name=".activity.UILibrary.PopupMenuAct" />
+        <activity android:name=".activity.UILibrary.SwipeMenuRecycleViewAct" />
+        <activity android:name=".activity.UILibrary.ExplosionAnimatorAct" />
+        <activity android:name=".activity.UILibrary.LinkagePopupWindowAct" />
+        <activity android:name=".activity.UILibrary.ClickEffectAct" />
+        <activity android:name=".activity.UILibrary.NavigationLeftAct" />
+        <activity android:name=".activity.UILibrary.ObservableScrollViewAct" />
+        <activity android:name=".activity.UILibrary.TransitionAnimAct" />
+        <activity android:name=".activity.UILibrary.DetailActivity" />
+        <activity android:name=".activity.UILibrary.ExpandableTextViewAndLayoutAct" />
+        <activity android:name=".activity.UILibrary.SwipeRefreshLayoutAct" />
+        <activity android:name=".activity.UILibrary.ListPopupWindowAct" />
+        <activity android:name=".activity.UILibrary.RecyclerViewActivity" />
+        <activity android:name=".activity.UILibrary.RecyclerVIewDecorationActOne" />
+        <activity android:name=".activity.UILibrary.RecyclerVIewDecorationActTwo" />
+        <activity android:name=".activity.UILibrary.RecyclerVIewDecorationActThree" />
+        <activity android:name=".activity.UILibrary.ItemTouchHelperAct" />
+        <activity android:name=".activity.UILibrary.TextInputLayoutAct" />
+        <activity android:name=".activity.UILibrary.KeyBoardAct" />
+        <activity
+            android:name=".activity.UILibrary.SearchViewAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.PaletteAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.PaletteAct2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.NavigationQQLeftAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.PaymentKeyBoardAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.ScrollViewIndicatorAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.SwipeMenuAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.BiLiBiLiSearchViewAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.ContactsAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.ParallaxViewAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.ScrollViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.RecyclerViewLinearActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.RecyclerViewGridActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UILibrary.AnimProgressBarAct"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".thirdparty.cropView.CropImageActivity" />
+        <activity android:name=".activity.ExerciseLibrary.KotlinTestAct" />
+        <activity android:name=".activity.ExerciseLibrary.KotlinTestAct2"></activity>
+    </application>
+
+</manifest>

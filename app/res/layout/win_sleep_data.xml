@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="320dp"
+    android:background="@drawable/btn_border_black"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/imgMoon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_moon"
+            android:layout_toLeftOf="@+id/txtLabel1"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="共"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color_main"
+            android:layout_toLeftOf="@+id/txtAllTime"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@+id/txtAllTime"/>
+
+        <TextView
+            android:id="@+id/txtAllTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="07时25分"
+            android:textSize="12sp"
+            android:textColor="@color/txt_color_main"
+            android:layout_centerInParent="true"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_dcdcdc"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutTop1"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/layoutTop">
+
+        <RelativeLayout
+            android:id="@+id/layoutDeepTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDeep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深度睡眠"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <TextView
+                android:id="@+id/txtDeepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0分钟"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_bottom_size"
+                android:layout_marginTop="@dimen/txt_marTop2"
+                android:layout_below="@+id/txtDeep" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutShallTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtShall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浅度睡眠"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <TextView
+                android:id="@+id/txtShallTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00时00分"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_bottom_size"
+                android:layout_marginTop="@dimen/txt_marTop2"
+                android:layout_below="@+id/txtShall" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutSoberTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtSober"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="清醒时长"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <TextView
+                android:id="@+id/txtSoberTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00时00分"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_bottom_size"
+                android:layout_marginTop="@dimen/txt_marTop2"
+                android:layout_below="@+id/txtSober" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/lineCenter"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/layoutTop1"
+        android:background="@color/split_line_dcdcdc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_below="@+id/lineCenter">
+
+        <RelativeLayout
+            android:id="@+id/layoutFallAsleepTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtFallAsleep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="入睡时间"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <TextView
+                android:id="@+id/txtFallAsleepTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="26sp"
+                android:layout_marginTop="@dimen/txt_marTop2"
+                android:layout_below="@+id/txtFallAsleep" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutWakeTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtWake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="醒来时间"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/txtWakeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#000000"
+                android:textSize="26sp"
+                android:layout_below="@+id/txtWake"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutEfficiency"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="睡眠效率"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/txt_top_size"
+                android:layout_marginTop="@dimen/txt_marTop1" />
+
+            <TextView
+                android:id="@+id/txtEfficiency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="99%"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:textSize="26sp"
+                android:layout_marginTop="@dimen/txt_marTop2"
+                android:layout_below="@+id/txtLabel" />
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

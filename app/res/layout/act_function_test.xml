@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:red="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+
+    <include android:id="@+id/layout_title" layout="@layout/layout_second_title" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@mipmap/bg_green_gradient">
+        <com.zjf.myself.codebase.view.FlowRadioGroup
+            android:id="@+id/tabBloodPressureHist"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/half_transparent_20ffffff"
+            android:layout_alignParentTop="true">
+
+            <RadioButton
+                android:id="@+id/btnToday"
+                style="@style/history_tab"
+                android:text="单次模式"
+                android:background="@drawable/btn_transparent_selector"/>
+
+            <RadioButton
+                android:id="@+id/btnWeek"
+                style="@style/history_tab"
+                android:text="连续模式"
+                android:background="@drawable/btn_transparent_selector"/>
+        </com.zjf.myself.codebase.view.FlowRadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_tab_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </RelativeLayout>
+
+</LinearLayout>

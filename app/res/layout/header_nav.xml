@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="198dp"
+    android:background="@mipmap/icon_tencent_bg">
+
+    <ImageView
+        android:id="@+id/imgQrcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_qrcode"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:id="@+id/txtAutograph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="降大任,苦心志,劳筋骨,担道义,著文..."
+        android:textSize="14sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgSvip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_svip"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="12dp"
+        android:background="#fcee81"
+        android:text="6"
+        android:textColor="#b72025"
+        android:textSize="10sp"
+        android:paddingRight="2dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginLeft="46dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/imgLv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_lv4"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imgSvip"
+        android:layout_marginLeft="10dp"/>
+    <ImageView
+        android:id="@+id/imgLv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_lv3"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imgLv4"
+        android:layout_marginLeft="2dp"/>
+    <ImageView
+        android:id="@+id/imgLv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_lv2"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imgLv3"
+        android:layout_marginLeft="2dp"/>
+    <ImageView
+        android:id="@+id/imgLv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_tencent_lv1"
+        android:layout_above="@+id/txtAutograph"
+        android:layout_marginBottom="5dp"
+        android:layout_toRightOf="@+id/imgLv2"
+        android:layout_marginLeft="2dp"/>
+
+
+
+    <ImageView
+        android:id="@+id/imgHeadIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@mipmap/avatar_male"
+        android:layout_above="@+id/imgSvip"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgHeadIcon"
+        android:layout_above="@+id/imgSvip"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:text="Light"
+        android:textSize="30sp"/>
+
+
+
+</RelativeLayout>

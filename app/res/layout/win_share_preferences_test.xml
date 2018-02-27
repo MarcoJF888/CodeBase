@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/edtTest"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/putData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="存入数据"/>
+
+    <Button
+        android:id="@+id/getData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取数据"/>
+
+    <TextView
+        android:id="@+id/txtTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+
+</LinearLayout>

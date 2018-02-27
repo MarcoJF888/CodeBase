@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.zjf.myself.codebase.view.FlowRadioGroup
+        android:id="@+id/tabMain"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@color/bule_37a9f8">
+
+        <RadioButton
+            android:id="@+id/btnHome"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/btn_home_selector" />
+
+        <ImageView
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="#000000"/>
+
+        <RadioButton
+            android:id="@+id/btnNews"
+            style="@style/main_tab"
+            android:drawableTop="@drawable/btn_news_selector" />
+
+    </com.zjf.myself.codebase.view.FlowRadioGroup>
+
+</LinearLayout>

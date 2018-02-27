@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="为了确保校准的准确性,请再次使用专业设备测量血压,并将得到的高低压分别再次填入下方输入框"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/txt_color_main"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layoutUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="110dp">
+
+        <ImageView
+            android:id="@+id/imgLabelAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_bp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收缩压/高压:"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/txt_color_main" />
+
+        <EditText
+            android:id="@+id/eTxtBpHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:maxLength="11"
+            android:inputType="number"
+            android:background="@null"
+            android:textSize="20sp"
+            android:textColor="@color/green_67b82b"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/split_line_dcdcdc"
+        android:layout_below="@+id/layoutUserName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutPassWd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutUserName">
+
+        <ImageView
+            android:id="@+id/imgLabelPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_bp"
+            android:layout_marginLeft="45dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="舒张压/低压:"
+            android:textSize="14sp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/txt_color_main" />
+
+        <EditText
+            android:id="@+id/eTxtBpLow"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:maxLength="16"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColor="@color/green_67b82b"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="45dp"/>
+
+        <!--<CheckBox-->
+        <!--android:id="@+id/cbDisplayPassword"-->
+        <!--android:checked="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:button="@drawable/btn_password_selector"/>-->
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/split_line_dcdcdc"
+        android:layout_below="@+id/layoutUserName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+
+            android:background="@drawable/icon_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+
+            android:textSize="@dimen/btn_txt_size"
+            android:textColor="@color/textcolor_white_selector"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingRight="80dp"
+            android:paddingLeft="80dp"
+
+            android:layout_marginTop="30dp"
+            android:background="@drawable/icon_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

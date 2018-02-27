@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_round_black"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/btnNormalMode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+             <TextView
+                android:id="@+id/txtLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="正常模式"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/txt_color_main"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/imgNormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_selected"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txtLabel1"
+                android:layout_marginLeft="20dp"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#000000"/>
+
+        <RelativeLayout
+            android:id="@+id/btnCalibrationMode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/txtLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="校准模式"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/txt_color_main"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:id="@+id/imgCalibration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_selected"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/txtLabel2"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnCreateDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="创建数据库"/>
+
+    <Button
+        android:id="@+id/btnAddData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加数据"/>
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="更新数据"/>
+
+    <Button
+        android:id="@+id/btnDeleteData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="删除数据"/>
+
+    <Button
+        android:id="@+id/btnReplaceData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="替换数据"/>
+
+    <Button
+        android:id="@+id/btnEmptyData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/bp_four_below"
+        android:text="清空数据"/>
+
+    <Button
+        android:id="@+id/btnQueryData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询数据"/>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="具体效果需要查看Android Studio 里查看log"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

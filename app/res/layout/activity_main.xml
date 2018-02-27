@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@mipmap/icon_bg2"
+    tools:context="com.zjf.myself.codebase.activity.HomeAct">
+
+    <Button
+        android:id="@+id/btnExerciseLibrary"
+        android:onClick="btnExerciseLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="日常学习"/>
+    <Button
+        android:id="@+id/btnAlgorithmLibrary"
+        android:onClick="btnAlgorithmLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnExerciseLibrary"
+        android:text="算法练习"/>
+
+    <Button
+        android:id="@+id/btnUILibrary"
+        android:onClick="btnUILibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UI控件"
+        android:layout_below="@+id/btnAlgorithmLibrary"/>
+
+    <Button
+        android:id="@+id/btnFreeTime"
+        android:onClick="btnFreeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="空闲练习"
+        android:layout_below="@+id/btnUILibrary"/>
+
+
+    <Button
+        android:id="@+id/btnListTaskAct"
+        android:onClick="btnListTaskAct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="每日任务"
+        android:layout_below="@+id/btnFreeTime"/>
+
+    <Button
+        android:id="@+id/btnWebView"
+        android:onClick="btnWebView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载网页"
+        android:layout_below="@+id/btnListTaskAct"/>
+
+
+    <Button
+        android:id="@+id/btnExitLogin"
+        android:onClick="btnExitLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出登录"
+        android:textColor="@color/bp_four_below"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

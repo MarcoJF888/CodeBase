@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bargain_bg"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="41dip"
+            android:gravity="center"
+            android:text="蓝天手机店"
+            android:textColor="@color/grey_444444"
+            android:textSize="18sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="23dip"
+            android:layout_marginRight="23dip"
+            android:background="@color/grey_444444"/>
+    </LinearLayout>
+    <com.yineng.android.thirdparty.timepicker.view.DatePicker1
+        android:id="@+id/dp_test"
+        android:layout_width="wrap_content"
+        android:background="@color/grey_dcdcdc"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_dcdcdc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_key_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="@color/dialog_textcolor_selector"
+            android:textSize="@dimen/dialog_key_size">
+        </Button>
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_dcdcdc"/>
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="确定"
+            android:textColor="@color/dialog_textcolor_selector"
+            android:textSize="@dimen/dialog_key_size">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

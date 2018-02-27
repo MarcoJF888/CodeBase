@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="txt_color_main">#333333</color>
+    <color name="title_background_color">#3F51B5</color>
+
+
+    <color name="main_color">#FA7C20</color>
+    <color name="gray">#333333</color>
+
+    <color name="common_blue_0090FF">#0090FF</color>
+    <color name="green_main">#00923f</color>
+    <color name="transparent_40000000">#40000000</color>
+    <color name="white">#ffffff</color>
+    <color name="black_000000">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="half_transparent_black">#50000000</color>
+    <color name="half_transparent_white">#50ffffff</color>
+    <color name="half_transparent_20000000">#20000000</color>
+    <color name="half_transparent_20ffffff">#20ffffff</color>
+    <color name="grey_efefef">#efefef</color>
+    <color name="grey_e6e6e6">#e6e6e6</color>
+    <color name="grey_dcdcdc">#dcdcdc</color>
+    <color name="grey_B3B3B3">#B3B3B3</color>
+    <color name="grey_a9a9a9">#a9a9a9</color>
+    <color name="grey_454545">#454545</color>
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_969696">#969696</color>
+    <color name="grey_444444">#444444</color>
+    <color name="grey_d9d9d9">#d9d9d9</color>
+    <color name="grey_474747">#474747</color>
+    <color name="grey_333333">#333333</color>
+    <color name="grey_666666">#666666</color>
+    <color name="grey_353535">#353535</color>
+    <color name="c_light_white">#FAFAFA</color>
+    <color name="c_light_white1">#55E4E2E4</color>
+    <color name="c_light_gray">#3e444c</color>
+    <color name="c_light_gray2">#5C5C5C</color>
+    <color name="c_light_gray3">#7F7F7F</color>
+    <color name="c_light_gray4">#9F9F9F</color>
+    <color name="c_light_gray5">#C5C5C5</color>
+    <color name="c_light_gray6">#EFEFEF</color>
+    <color name="c_light_gray7">#DFDFDF</color>
+    <color name="c_light_yellow" >#F8AC48</color>
+    <color name="progress_text_color">#666</color>
+
+
+
+    <color name="green_00933e">#00933e</color>
+    <color name="bule_37a9f8">#37a9f8</color>
+    <color name="green_2F8505">#2F8505</color>
+    <color name="green_00923f">#00923f</color>
+    <color name="green_006e2f">#006e2f</color>
+    <color name="green_67b82b">#67b82b</color>
+
+    <color name="bule_2F8505">#2F8505</color>
+    <color name="title_00923f">#00923f</color>
+    <color name="watchmsg_f3fdff">#f3fdff</color>
+    <color name="me_msg_e4e5e7">#e4e5e7</color>
+    <color name="split_line_dcdcdc">#dcdcdc</color>
+    <color name="app_bg">#fff</color>
+
+
+
+    <color name="bp_one_below">#00923f</color>
+
+    <color name="bp_two_top">#04bd8c</color>
+    <color name="bp_two_below">#74cc04</color>
+
+    <color name="bp_three_top">#acc304</color>
+    <color name="bp_three_below">#f08e03</color>
+
+    <color name="bp_four_top">#ff4800</color>
+    <color name="bp_four_below">#fe1800</color>
+
+
+    <color name="small">#67b82b</color>
+    <color name="big">#4cffffff</color>
+
+    <color name="sleep_sober">#8ceaff</color>
+    <color name="sleep_shall">#ffd08c</color>
+    <color name="sleep_deep">#35c2d1</color>
+
+
+    <color name="txt_bp_cali_yello">#f08e03</color>
+    <color name="txt_bp_cali_grey">#bfbfbf</color>
+    <color name="txt_bp_cali_ok">#67b82b</color>
+
+
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+    <color name="view_bg">#00000000</color>
+    <color name="shadow">#25808080</color>
+    <color name="dialog_bg">#f5f5f5</color>
+
+
+    <color name="primaryText">@color/primary_text_default_material_light</color>
+    <color name="red500">#F44336</color>
+    <color name="blue500">#2196f3</color>
+    <color name="orange500">#FF9800</color>
+
+    <color name="btn_qq_login">#44353535</color>
+    <color name="btn_qq_login_down">#a21badea</color>
+
+    <color name="gray_divide">#eee</color>
+</resources>

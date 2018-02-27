@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--图片轮播-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="166dp"
+        android:layout_marginTop="45dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="bottom"
+            android:background="#69000000"
+            android:paddingLeft="14dp"
+            android:paddingRight="13dp">
+
+            <TextView
+                android:id="@+id/txtBannerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/Sample"
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginRight="50dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true">
+
+                <View
+                    android:id="@+id/dot_0"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_focused"/>
+                <View
+                    android:id="@+id/dot_1"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_normal"/>
+                <View
+                    android:id="@+id/dot_2"
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="2dip"
+                    android:layout_marginRight="2dip"
+                    android:background="@mipmap/dot_normal"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

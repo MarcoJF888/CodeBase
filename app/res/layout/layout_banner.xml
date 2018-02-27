@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_gravity="bottom"
+        android:background="#69000000"
+        android:paddingLeft="14dp"
+        android:paddingRight="13dp">
+
+        <TextView
+            android:id="@+id/txtBannerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/Sample"
+            android:textColor="@android:color/white"
+            android:textSize="13sp" />
+
+        <com.zjf.myself.codebase.thirdparty.networkbanner.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="8dip"
+            android:layout_height="22.5dip"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            ptr:mRadius="3.5dip"
+            ptr:mPageColor="#60000000"
+            ptr:mFillColor="@color/white"
+            />
+    </RelativeLayout>
+</FrameLayout>

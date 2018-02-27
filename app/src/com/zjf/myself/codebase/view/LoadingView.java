@@ -1,0 +1,195 @@
+package com.zjf.myself.codebase.view;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.Animation.AnimationListener;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.zjf.myself.codebase.R;
+import com.zjf.myself.codebase.util.ViewUtils;
+
+
+public class LoadingView extends LinearLayout implements AnimationListener {
+	private ImageView imgLoadResult,imgProgress;
+	private TextView txtLoading,txtLoadingInfo;
+	private View btnLoading;
+	protected Animation progressAnima;
+	private View viewLoading,viewLoadFail;
+	private OnAgainListener onAgainListener;
+
+	public LoadingView(Context context) {
+		super(context);
+		init();
+
+	}
+
+	public LoadingView(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		init();
+	}
+
+	public LoadingView(Context context, AttributeSet attrs, int defStyle) {
+		super(context, attrs, defStyle);
+		init();
+	}
+
+	private void init() {
+		inflate(getContext(), R.layout.view_loading, this);
+		setVisibility(View.GONE);
+		viewLoading=findViewById(R.id.loading);
+		viewLoadFail=findViewById(R.id.view_loadFail);
+		imgLoadResult = (ImageView) findViewById(R.id.img_loadResult);
+		imgProgress=(ImageView)findViewById(R.id.img_progress);
+		progressAnima = AnimationUtils.loadAnimation(getContext(), R.anim.loading_progressbar_anim);
+		LinearInterpolator lin = new LinearInterpolator();
+		progressAnima.setInterpolator(lin);
+		txtLoading = (TextView) findViewById(R.id.text_loading);
+		btnLoading = findViewById(R.id.btn_loading);
+		btnLoading.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				if (onAgainListener != null) {
+					onAgainListener.onLoading();
+				}
+			}
+		});
+
+		txtLoadingInfo= (TextView) findViewById(R.id.txtLoadingInfo);
+
+	}
+
+	public void setBtnText(String btnText) {
+		ViewUtils.setText(btnLoading, btnText);
+	}
+
+	/**
+	 * 开始加载数据时调用此函数
+	 */
+
+	public void startLoading() {
+		setVisibility(View.VISIBLE);
+		ViewUtils.setGone(viewLoadFail);
+		ViewUtils.setVisible(viewLoading);
+		imgProgress.startAnimation(progressAnima);
+	}
+
+	public void startLoading(String tips) {
+		setVisibility(View.VISIBLE);
+		ViewUtils.setGone(viewLoadFail);
+		ViewUtils.setVisible(viewLoading);
+		imgProgress.startAnimation(progressAnima);
+		txtLoadingInfo.setText(tips);
+	}
+
+	/**
+	 * 数据加载成功切有数据时调用
+	 */
+	public void onLoadingComplete() {
+		setVisibility(View.GONE);
+		imgProgress.clearAnimation();
+	}
+
+	public void onLoadingFail() {
+		onLoadingFail("加载失败，稍后加载", R.mipmap.loading_empty);
+	}
+
+	public void onLoadingFail(String failMsg) {
+		onLoadingFail(failMsg, R.mipmap.loading_fial1);
+	}
+
+	public void onLoadingFail(String failMsg, boolean isLoading) {
+		onLoadingFail(failMsg, R.mipmap.loading_empty, isLoading);
+	}
+
+	/**
+	 * 加载成功但没有数据时调用此函数
+	 */
+	public void onDataEmpty() {
+		onDataEmpty("暂无数据!", false, R.mipmap.loading_empty);
+	}
+
+	public void onDataEmpty(String emptyMsg) {
+		onDataEmpty(emptyMsg,false,R.mipmap.loading_empty);
+	}
+	public void onDataEmpty(String emptyMsg, boolean showLoadBtn) {
+		onDataEmpty(emptyMsg,showLoadBtn,R.mipmap.loading_empty);
+	}
+	public void onDataEmpty(String emptyMsg,int img_empty) {
+		onDataEmpty(emptyMsg,false,img_empty);
+	}
+	public void onDataEmpty(String emptyMsg,boolean showLoadBtn,int img_empty) {
+		setVisibility(View.VISIBLE);
+		ViewUtils.setText(txtLoading, emptyMsg);
+		ViewUtils.setGone(viewLoading);
+		ViewUtils.setVisible(viewLoadFail);
+		if(showLoadBtn)
+		{
+			ViewUtils.setVisible(btnLoading);
+		}else
+		{
+			ViewUtils.setGone(btnLoading);
+		}
+		imgProgress.clearAnimation();
+		imgLoadResult.setImageDrawable(getResources().getDrawable(img_empty));
+	}
+
+
+
+
+
+	/**
+	 * 数据加载失败是调用该函数
+	 *
+	 * @param failMsg
+	 * @param failImg
+	 */
+	public void onLoadingFail(String failMsg, int failImg) {
+		onLoadingFail(failMsg, failImg, true);
+	}
+
+	public void onLoadingFail(String failMsg, int failImg, boolean isLoading) {
+		setVisibility(View.VISIBLE);
+		ViewUtils.setGone(viewLoading);
+		ViewUtils.setVisible(viewLoadFail);
+		ViewUtils.setText(txtLoading, failMsg);
+		if (isLoading) {
+			ViewUtils.setVisible(btnLoading);
+		} else {
+			ViewUtils.setGone(btnLoading);
+		}
+		imgProgress.clearAnimation();
+		imgLoadResult.setImageDrawable(getResources().getDrawable(failImg));
+	}
+
+	public void setOnAgainListener(OnAgainListener onAgainListener) {
+		this.onAgainListener = onAgainListener;
+	}
+
+	@Override
+	public void onAnimationStart(Animation animation) {
+
+	}
+
+	@Override
+	public void onAnimationEnd(Animation animation) {
+		viewLoading.clearAnimation();
+	}
+
+	@Override
+	public void onAnimationRepeat(Animation animation) {
+
+	}
+
+
+	public interface OnAgainListener {
+		public void onLoading();
+	}
+
+}

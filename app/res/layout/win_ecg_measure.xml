@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+
+    <RelativeLayout
+        android:id="@+id/layoutUploadSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动上传心电图"
+            style="@style/txt_style_content_black"
+            android:paddingTop="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLabel"
+            android:textSize="12sp"
+            android:textColor="@color/grey_969696"
+            android:paddingTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
+            android:text="开关打开测量血压后自动上传心电图" />
+
+        <TextView
+            android:id="@+id/btnSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/checkbox_off"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/split_line_dcdcdc"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTimeSelect"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutUploadSwitch">
+        <RelativeLayout
+            android:id="@+id/btnLayoutTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_gridview_selector"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtLabel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/txt_color_main" />
+
+            <TextView
+                android:id="@+id/txtAllTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15时02分"
+                android:textSize="14sp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/txt_color_main" />
+
+            <ImageView
+                android:id="@+id/imgPoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_down"/>
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtLabel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心率(BPM):"
+                android:textSize="@dimen/txt_label_size"
+                android:textColor="@color/txt_color_main"
+                android:layout_marginLeft="@dimen/txt_mar_left"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:id="@+id/txtHeartRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="88"
+                android:textSize="@dimen/txt_num_size"
+                android:textColor="@color/green_67b82b"
+                android:layout_marginLeft="@dimen/txt_num_mar_left"
+                android:layout_toRightOf="@+id/txtLabel2"
+                android:layout_centerVertical="true"/>
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/split_line_dcdcdc"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/split_line_dcdcdc"
+        android:layout_below="@+id/layoutTimeSelect"/>
+
+    <RelativeLayout
+        android:id="@+id/layoutInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTimeSelect"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="状态: "
+            android:textSize="@dimen/txt_label_size"
+            android:textColor="@color/txt_color_main"/>
+
+        <TextView
+            android:id="@+id/txtHealthState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="血压正常"
+            android:textSize="16sp"
+            android:textColor="@color/green_67b82b"
+            android:layout_toRightOf="@+id/txtState"
+            android:layout_alignBaseline="@+id/txtState"/>
+
+        <TextView
+            android:id="@+id/txtLabel3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="低压(mmHg):"
+            android:textSize="@dimen/txt_label_size"
+            android:textColor="@color/txt_color_main"
+            android:layout_below="@+id/txtState"
+            android:layout_marginTop="@dimen/txt_mar_top"/>
+        <TextView
+            android:id="@+id/txtBpLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88"
+            android:textSize="@dimen/txt_num_size"
+            android:textColor="@color/green_67b82b"
+            android:layout_toRightOf="@+id/txtLabel3"
+            android:layout_below="@+id/txtState"
+            android:layout_marginLeft="@dimen/txt_num_mar_left"
+            android:layout_marginTop="@dimen/txt_mar_top"
+            android:layout_alignBaseline="@+id/txtLabel3"/>
+
+        <TextView
+            android:id="@+id/txtLabel4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高压(mmHg):"
+            android:textSize="@dimen/txt_label_size"
+            android:textColor="@color/txt_color_main"
+            android:layout_toRightOf="@+id/txtBpLow"
+            android:layout_below="@+id/txtState"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="@dimen/txt_mar_top"/>
+        <TextView
+            android:id="@+id/txtBpHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="155"
+            android:textSize="@dimen/txt_num_size"
+            android:textColor="@color/green_67b82b"
+            android:layout_toRightOf="@+id/txtLabel4"
+            android:layout_below="@+id/txtState"
+            android:layout_marginLeft="@dimen/txt_num_mar_left"
+            android:layout_marginTop="@dimen/txt_mar_top"
+            android:layout_alignBaseline="@+id/txtLabel3"/>
+
+
+        <TextView
+            android:id="@+id/btnStart"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:text="开始"
+            android:textSize="14sp"
+            android:textColor="@color/textcolor_white_selector"
+            android:gravity="center"
+            android:background="@drawable/icon_button"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/split_line_dcdcdc"
+        android:layout_below="@+id/layoutInfo"/>
+</RelativeLayout>

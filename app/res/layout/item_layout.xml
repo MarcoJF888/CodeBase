@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:hint="输入姓名"
+            android:textColor="#000000"
+            android:maxLength="4"
+            android:paddingBottom="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/edtNum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/edtName"
+            android:background="@null"
+            android:hint="输入本局输赢数"
+            android:inputType="numberSigned|numberDecimal"
+            android:maxLength="4"
+            android:paddingBottom="15dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="15dp"
+            android:textSize="14sp" />
+
+        <!--<Button-->
+        <!--android:id="@+id/btnAdd"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_toRightOf="@+id/edtNum"-->
+        <!--android:text="加" />-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btnReduce"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toRightOf="@+id/btnAdd"-->
+        <!--android:text="减" />-->
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#67B82B"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+</LinearLayout>

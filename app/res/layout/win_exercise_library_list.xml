@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <ListView
+        android:id="@+id/lvExerciseLibrary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="45dp"
+        android:clipChildren="true"
+        android:clipToPadding="false">
+    </ListView>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:textSize="18dp"
+        android:text="算法练习"
+        android:visibility="visible"
+        android:textColor="#ffffff"
+        android:background="@color/title_background_color"
+        android:gravity="center"/>
+</RelativeLayout>

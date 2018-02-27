@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zjf.myself.codebase.view.CustomVideoView
+        android:id="@+id/videoviewWelcome"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+
+    <View
+        android:id="@+id/layoutBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/btn_qq_login"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:visibility="visible">
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_qq_white"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/txtLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="QQ"
+            android:layout_toRightOf="@+id/imgLogo"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <TextView
+            android:id="@+id/txtSlogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I‘M QQ\n每一天\n乐在沟通"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:layout_marginLeft="16dp"
+            android:layout_above="@+id/layoutBtn"
+            android:layout_marginBottom="46dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="登录"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:background="@drawable/head_bt_bg"/>
+
+            <Button
+                android:id="@+id/btnRegest"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:text="新用户"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:background="#1bafe6"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="46dp"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@+id/layoutMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layoutTips"
+            android:layout_marginBottom="10dp">
+            <EditText
+                android:id="@+id/eTxtAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="QQ号/手机号/邮箱"
+                android:background="@null"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp" />
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/eTxtAccount"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@color/white"/>
+
+            <EditText
+                android:id="@+id/eTxtPassWd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="密码"
+                android:background="@null"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_below="@+id/line"/>
+
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/eTxtPassWd"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:id="@+id/btnLogin2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="登录"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:background="@drawable/btn_border_qq_login"
+                android:layout_below="@+id/line1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/btnForgetPassWd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnLogin2"
+                android:layout_marginLeft="26dp"
+                android:paddingRight="30dp"
+                android:paddingTop="12dp"
+                android:text="忘记密码?"
+                android:textColor="#1badea"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/btnRegest1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btnLogin2"
+                android:layout_marginRight="26dp"
+                android:paddingLeft="30dp"
+                android:paddingTop="12dp"
+                android:text="新用户注册"
+                android:textColor="#1badea"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录即代表阅读并同意"
+                android:textSize="14sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/btnTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务条款"
+                android:textSize="14sp"
+                android:textColor="#1bafe6"
+                android:layout_toRightOf="@+id/txtLabel"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zjf.myself.codebase.activity.UILibrary.CircleProgressAct">
+
+    <FrameLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_green_gradient">
+
+
+        <!--<com.zjf.myself.codebase.view.CircleProgressView-->
+        <!--android:id="@+id/progressview1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:background="@mipmap/bg_green_gradient"/>-->
+
+
+        <!--percent-->
+        <com.zjf.myself.codebase.view.CirclePercentView
+            android:id="@+id/circleView"
+            app:stripeWidth="15dp"
+            app:centerTextSize="16sp"
+
+            android:layout_gravity="center"
+            android:layout_width="220dp"
+            android:layout_height="220dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:background="@mipmap/icon_progress1"
+                android:layout_centerInParent="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtSetp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/txtLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:text="目标:"
+
+                    android:layout_marginBottom="15dp" />
+
+                <TextView
+                    android:id="@+id/txtSetpTarget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:text="1111"
+                    android:layout_marginBottom="15dp"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtSetp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textSize="35dp"
+                android:text="5555"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="步"
+                android:textColor="#ffffff"
+                android:textSize="12sp"
+                android:layout_toRightOf="@+id/txtSetp"
+                android:layout_alignBaseline="@+id/txtSetp"
+                android:layout_alignBottom="@+id/txtSetp"/>
+
+            <ImageView
+                android:id="@+id/imgLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSetp"
+                android:src="@mipmap/icon_sport"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:text="change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTop"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

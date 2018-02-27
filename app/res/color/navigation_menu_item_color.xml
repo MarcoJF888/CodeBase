@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true"
+        android:color="@color/black_000000"/><!-- selected颜色 -->
+
+    <!--<item android:state_pressed="true"-->
+        <!--android:color="@color/colorAccent"/> &lt;!&ndash; pressed颜色 &ndash;&gt;-->
+
+    <!--<item android:state_focused="true"-->
+        <!--android:color="@color/colorAccent"/> &lt;!&ndash; focused颜色 &ndash;&gt;-->
+
+    <item android:color="@color/grey_353535"/> <!-- default颜色 -->
+</selector>

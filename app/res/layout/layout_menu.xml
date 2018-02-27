@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@mipmap/icon_tencent_bg">
+
+        <ImageView
+            android:id="@+id/imgQrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_qrcode"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:id="@+id/txtAutograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有签名"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imgSvip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_svip"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="12dp"
+            android:background="#fcee81"
+            android:text="6"
+            android:textColor="#b72025"
+            android:textSize="10sp"
+            android:paddingRight="2dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginLeft="46dp"
+            android:layout_marginBottom="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgLv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_lv4"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/imgSvip"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/imgLv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_lv3"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/imgLv4"
+            android:layout_marginLeft="2dp"/>
+        <ImageView
+            android:id="@+id/imgLv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_lv2"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/imgLv3"
+            android:layout_marginLeft="2dp"/>
+        <ImageView
+            android:id="@+id/imgLv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tencent_lv1"
+            android:layout_above="@+id/txtAutograph"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/imgLv2"
+            android:layout_marginLeft="2dp"/>
+
+
+
+        <ImageView
+            android:id="@+id/imgHeadIcon"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@mipmap/avatar_male"
+            android:layout_above="@+id/imgSvip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgHeadIcon"
+            android:layout_above="@+id/imgSvip"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#ffffff"
+            android:text="Light"
+            android:textSize="30sp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCenter"
+        android:layout_below="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp">
+
+            <ImageView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_svip" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/one"
+                android:text="我的超级会员"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_top">
+
+            <ImageView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_qianbao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/two"
+                android:text="我的钱包"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_top">
+
+            <ImageView
+                android:id="@+id/img_zhuangban"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_zhuangban" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/img_zhuangban"
+                android:text="个性装扮"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_top">
+
+            <ImageView
+                android:id="@+id/img_shoucang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_shoucang" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/img_shoucang"
+                android:text="我的收藏"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_top">
+
+            <ImageView
+                android:id="@+id/img_xiangce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_xiangce" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/img_xiangce"
+                android:text="我的相册"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mar_top">
+
+            <ImageView
+                android:id="@+id/img_wenjian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/icon_mar_left"
+                android:src="@mipmap/icon_tencent_setting_wenjian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/txt_mar_left_qq"
+                android:layout_toRightOf="@id/img_wenjian"
+                android:text="我的文件"
+                android:textColor="#353535"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/imgShezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_tencent_setting_shezhi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgShezhi" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/imgYejian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_tencent_moon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="夜间"
+                android:textSize="14sp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgYejian" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24°"
+                android:textSize="38sp"
+                android:textColor="#0fbaee"
+                android:layout_marginBottom="5dp"
+                android:layout_above="@+id/txtLocal"/>
+
+            <TextView
+                android:id="@+id/txtLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="深圳市"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

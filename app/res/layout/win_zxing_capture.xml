@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!--扫码title-->
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_title_height">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_msg_back"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:scaleType="center"
+            android:background="@drawable/btn_half_transparent_selector"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:textSize="@dimen/second_title_text_size"
+            android:textColor="#ffffff"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtRight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textSize="14sp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/btn_half_transparent_selector"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+        </TextView>
+
+    </RelativeLayout>
+
+    <SurfaceView
+        android:id="@+id/capture_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout" />
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/capture_mask_top"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/shadow"
+            android:contentDescription="@string/app_name"/>
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_view"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/qr_code_bg">
+
+            <ImageView
+                android:id="@+id/capture_scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/scan_line"
+                android:contentDescription="@string/app_name"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/capture_mask_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_add_child_hand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_child_hand"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_below="@+id/capture_crop_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp" />
+
+
+        <ImageView
+            android:id="@+id/capture_mask_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_toLeftOf="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageView
+            android:id="@+id/capture_mask_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/capture_mask_bottom"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/capture_mask_top"
+            android:layout_toRightOf="@id/capture_crop_view"
+            android:background="@drawable/shadow"
+            android:contentDescription="@string/app_name"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btnAlbum"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="55dp"-->
+            <!--android:layout_marginTop="90dp"-->
+            <!--android:background="@drawable/icon_open_album"-->
+            <!--android:layout_below="@+id/tv_add_child_hand"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="相册"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_below="@+id/btnAlbum"-->
+            <!--android:layout_centerHorizontal="true" />-->
+
+
+        <!--相册闪光灯同在-->
+        <!--<ImageView-->
+        <!--android:id="@+id/btn_open_album"-->
+        <!--android:layout_width="70dp"-->
+        <!--android:layout_height="45dp"-->
+        <!--android:src="@drawable/icon_open_album"-->
+        <!--android:layout_below="@+id/tv_add_child_hand"-->
+        <!--android:layout_marginLeft="70dp"-->
+        <!--android:layout_marginTop="20dp"/>-->
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="相册"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="16sp"-->
+        <!--android:layout_below="@+id/btn_open_album"-->
+        <!--android:layout_marginLeft="88dp"-->
+        <!--android:layout_marginTop="3dp"/>-->
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="闪光灯"-->
+            <!--android:textColor="#ffffff"-->
+            <!--android:textSize="16sp"-->
+            <!--android:layout_marginTop="3dp"-->
+            <!--android:layout_below="@+id/btn_flash_on"-->
+            <!--android:layout_alignRight="@+id/btn_flash_on"-->
+            <!--android:layout_alignEnd="@+id/btn_flash_on"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_marginEnd="10dp" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_flash_on"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:src="@drawable/icon_flash_on"-->
+            <!--android:layout_below="@+id/tv_add_child_hand"-->
+            <!--android:layout_marginRight="75dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

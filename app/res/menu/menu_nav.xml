@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_menu_svip"
+                    android:icon="@mipmap/icon_tencent_setting_svip"
+                    android:title="我的超级会员" />
+
+                <item
+                    android:id="@+id/nav_menu_qianbao"
+                    android:icon="@mipmap/icon_tencent_setting_qianbao"
+                    android:title="QQ钱包" />
+
+                <item
+                    android:id="@+id/nav_menu_zhuangban"
+                    android:icon="@mipmap/icon_tencent_setting_zhuangban"
+                    android:title="个性装扮" />
+                <item
+                    android:id="@+id/nav_menu_shoucang"
+                    android:icon="@mipmap/icon_tencent_setting_shoucang"
+                    android:title="我的收藏" />
+                <item
+                    android:id="@+id/nav_menu_xiangce"
+                    android:icon="@mipmap/icon_tencent_setting_xiangce"
+                    android:title="我的相册" />
+                <item
+                    android:id="@+id/nav_menu_wenjian"
+                    android:icon="@mipmap/icon_tencent_setting_wenjian"
+                    android:title="我的文件" />
+        </group>
+
+        <!--<item android:title="Communicate">-->
+
+                <!--<menu>-->
+                        <!--<item-->
+                            <!--android:id="@+id/nav_menu_share"-->
+                            <!--android:icon="@mipmap/login_out"-->
+                            <!--android:title="分享" />-->
+                        <!--<item-->
+                            <!--android:id="@+id/nav_menu_send"-->
+                            <!--android:icon="@mipmap/login_out"-->
+                            <!--android:title="发送" />-->
+                <!--</menu>-->
+        <!--</item>-->
+
+</menu>

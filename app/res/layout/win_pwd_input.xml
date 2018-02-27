@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.UILibrary.PwdInputAct">
+
+    <com.zjf.myself.codebase.view.MyEditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/MyEditText"
+        android:inputType="numberPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:maxLength="6" />
+    <TextView
+        android:textSize="29sp"
+        android:text="输入内容为:"
+        android:id="@+id/TextView"
+        android:layout_below="@+id/MyEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textSize="29sp"
+        android:id="@+id/TextView_complete"
+        android:layout_below="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <com.zjf.myself.codebase.view.SecurityCodeView
+        android:id="@+id/scv_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/TextView_complete"/>
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="输入验证码表示同意《用户协议》"
+        android:layout_below="@+id/scv_edittext"/>
+
+
+    <LinearLayout
+        android:id="@+id/layoutEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_below="@+id/tv_text">
+        <EditText
+            android:id="@+id/edt1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:background="@drawable/bg_round_black"
+            android:paddingTop="@dimen/long_inputedt_padding_top"
+            android:paddingBottom="@dimen/long_inputedt_padding_top"
+            android:gravity="center"
+            android:layout_margin="2dp" />
+        <EditText
+            android:id="@+id/edt2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:background="@drawable/bg_round_black"
+            android:paddingTop="@dimen/long_inputedt_padding_top"
+            android:paddingBottom="@dimen/long_inputedt_padding_top"
+            android:gravity="center"
+            android:layout_margin="2dp" />
+        <EditText
+            android:id="@+id/edt3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:background="@drawable/bg_round_black"
+            android:paddingTop="@dimen/long_inputedt_padding_top"
+            android:paddingBottom="@dimen/long_inputedt_padding_top"
+            android:gravity="center"
+            android:layout_margin="2dp" />
+        <EditText
+            android:id="@+id/edt4"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:background="@drawable/bg_round_black"
+            android:paddingTop="@dimen/long_inputedt_padding_top"
+            android:paddingBottom="@dimen/long_inputedt_padding_top"
+            android:gravity="center"
+            android:layout_margin="2dp" />
+        <EditText
+            android:id="@+id/edt5"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:maxLength="4"
+            android:inputType="number"
+            android:background="@drawable/bg_round_black"
+            android:paddingTop="@dimen/long_inputedt_padding_top"
+            android:paddingBottom="@dimen/long_inputedt_padding_top"
+            android:gravity="center"
+            android:layout_margin="2dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:textColor="@color/txt_color_main"
+        android:text=""
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/layoutEdt" />
+
+
+
+</RelativeLayout>
